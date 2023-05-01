@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
     [SerializeField] public RectTransform infoUI;
-    [SerializeField] public Button openInfoPanelButton;
-    [SerializeField] public Button closeInfoPanelButton;
+    [SerializeField] public GameObject openInfoPanelButton;
+    [SerializeField] public GameObject closeInfoPanelButton;
 
     private bool showInfoPanel = false;
     
@@ -16,8 +16,8 @@ public class UIManager : MonoBehaviour
         showInfoPanel = !showInfoPanel;
         if (showInfoPanel)
         {
-            openInfoPanelButton.gameObject.SetActive(false);
-            closeInfoPanelButton.gameObject.SetActive(true);
+            openInfoPanelButton.SetActive(false);
+            closeInfoPanelButton.SetActive(true);
             OpenInfoPanel();
         }
         else
