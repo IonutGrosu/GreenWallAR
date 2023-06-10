@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class Experience2Controller : MonoBehaviour
 {
@@ -12,14 +9,20 @@ public class Experience2Controller : MonoBehaviour
     [SerializeField] private GameObject startBtn;
     [SerializeField] private GameObject nextBtn;
     [SerializeField] private GameObject openInfoPanelBtn;
-    
-    
+    [SerializeField] private GameObject endPanel;
+
+    private GameObject _arSessionOrigin;
+
+
     // Start is called before the first frame update
     void Start()
     {
+        _arSessionOrigin = GameObject.Find("AR Session Origin");
+
         go.SetActive(false);
         nextBtn.SetActive(false);
         openInfoPanelBtn.SetActive(true);
+        endPanel.SetActive(false);
     }
 
     private void Update()
@@ -36,11 +39,30 @@ public class Experience2Controller : MonoBehaviour
             nextBtn.SetActive(true);
             go.SetActive(true);
             qrCodeBorder.SetActive(false);
+        } else if (chapter == 3)
+        {
+            openInfoPanelBtn.SetActive(false);
+            nextBtn.SetActive(false);
+            endPanel.SetActive(true);
         }
     }
 
     public void NextChapter()
     {
         chapter++;
+    }
+    
+    public void CloseEndPanel()
+    {
+        endPanel.SetActive(false);
+        EndExperience();
+    }
+
+    public void EndExperience()
+    {
+        var parent = this.transform.parent.gameObject;
+        _arSessionOrigin.GetComponent<PlaceTrackedImages>().RemoveTrackedExperience("experience2");
+
+        Destroy(parent);
     }
 }

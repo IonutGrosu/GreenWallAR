@@ -7,12 +7,15 @@ public class Experience3Controller : MonoBehaviour
     private int chapter = 1;
     // ch 1 - qr code border and Start button. Click on start => ch 2
     // ch 2 - pipes, info text panel and Next button. Click on next
+    // ch 3 - no info button, no next button
     
     [SerializeField] private GameObject pipes;
     [SerializeField] private GameObject qrCodeBorder;
     [SerializeField] private GameObject startBtn;
     [SerializeField] private GameObject nextBtn;
     [SerializeField] private GameObject openInfoPanelBtn;
+    [SerializeField] private GameObject endBtn;
+    [SerializeField] private GameObject endPanel;
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +23,8 @@ public class Experience3Controller : MonoBehaviour
         pipes.SetActive(false);
         nextBtn.SetActive(false);
         openInfoPanelBtn.SetActive(true);
+        endPanel.SetActive(false);
+        endBtn.SetActive(false);
     }
 
     // Update is called once per frame
@@ -29,6 +34,8 @@ public class Experience3Controller : MonoBehaviour
         {
             pipes.SetActive(false);
             nextBtn.SetActive(false);
+            endPanel.SetActive(false);
+            endBtn.SetActive(false);
             // openInfoPanelBtn.SetActive(false);
         } else if (chapter == 2)
         {
@@ -37,11 +44,30 @@ public class Experience3Controller : MonoBehaviour
             nextBtn.SetActive(true);
             pipes.SetActive(true);
             qrCodeBorder.SetActive(false);
+        } else if (chapter == 3)
+        {
+            endPanel.SetActive(true);
+            nextBtn.SetActive(false);
+            openInfoPanelBtn.SetActive(false);
+            endBtn.SetActive(false);
+            NextChapter();
         }
     }
     
     public void NextChapter()
     {
         chapter++;
+    }
+    
+    public void CloseEndPanel()
+    {
+        endPanel.SetActive(false);
+        EndExperience();
+    }
+    
+    public void EndExperience()
+    {
+        var parent = this.transform.parent.gameObject;
+        Destroy(parent);
     }
 }

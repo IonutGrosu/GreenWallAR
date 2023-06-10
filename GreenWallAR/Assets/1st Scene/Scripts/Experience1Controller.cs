@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 public class Experience1Controller : MonoBehaviour
@@ -15,7 +14,9 @@ public class Experience1Controller : MonoBehaviour
     [SerializeField] private GameObject qrCodeBorder;
     [SerializeField] private GameObject startBtn;
     [SerializeField] private GameObject nextBtn;
+    [SerializeField] private GameObject endBtn;
     [SerializeField] private GameObject openInfoPanelBtn;
+    [SerializeField] private GameObject endPanel;
 
     [SerializeField] private Material wallsMaterialOpaque;
     [SerializeField] private Material wallsMaterialTransparent;
@@ -29,6 +30,8 @@ public class Experience1Controller : MonoBehaviour
         room.SetActive(false);
         nextBtn.SetActive(false);
         openInfoPanelBtn.SetActive(true);
+        endPanel.SetActive(false);
+        endBtn.SetActive(false);
     }
 
     private void Update()
@@ -38,6 +41,7 @@ public class Experience1Controller : MonoBehaviour
          room.SetActive(false);
          nextBtn.SetActive(false);
          // openInfoPanelBtn.SetActive(false);
+         endPanel.SetActive(false);
         } else if (chapter == 2)
         {
             startBtn.SetActive(false);
@@ -48,6 +52,15 @@ public class Experience1Controller : MonoBehaviour
         } else if (chapter == 3)
         {
             MakeWallsInvisible();
+        }
+        else if(chapter == 4)
+        {
+            MakeWallsVisible();
+            endPanel.SetActive(true);
+            nextBtn.SetActive(false);
+            // endBtn.SetActive(true);
+            openInfoPanelBtn.SetActive(false);
+            NextChapter();
         }
     }
 
@@ -61,5 +74,24 @@ public class Experience1Controller : MonoBehaviour
         walls.GetComponent<Renderer>().material = wallsMaterialTransparent;
         ceiling.GetComponent<Renderer>().material = ceilingMaterialTransparent;
         floor.GetComponent<Renderer>().material = floorMaterialTransparent;
+    }
+    
+    public void MakeWallsVisible()
+    {
+        walls.GetComponent<Renderer>().material = wallsMaterialOpaque;
+        ceiling.GetComponent<Renderer>().material = ceilingMaterialOpaque;
+        floor.GetComponent<Renderer>().material = floorMaterialOpaque;
+    }
+
+    public void CloseEndPanel()
+    {
+        endPanel.SetActive(false);
+        EndExperience();
+    }
+
+    public void EndExperience()
+    {
+        var parent = this.transform.parent.gameObject;
+        Destroy(parent);
     }
 }

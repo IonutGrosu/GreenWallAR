@@ -51,4 +51,10 @@ public class PlaceTrackedImages : MonoBehaviour
             //_instantiatedPrefabs[trackedImage.referenceImage.name].SetActive(false);
         }
     }
+
+    public void RemoveTrackedExperience(String experienceName)
+    {
+        Console.WriteLine("-------------------" + experienceName);
+        _instantiatedPrefabs.Remove(experienceName);
+    }
 }
