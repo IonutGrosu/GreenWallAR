@@ -10,3 +10,6 @@
 
 - The three experiences can be found in their own folder, do not change the name of the prefabs
 - You will find a QrCodeBorder GameObject inside each experience prefab. this is set up at 0,0,0 and represents the size and location of the tracked image. Move the rest of the Game Objects where you want them to be in comparison to the QrCodeBorder
+
+
+[QR Code Generator](https://www.the-qrcode-generator.com)
