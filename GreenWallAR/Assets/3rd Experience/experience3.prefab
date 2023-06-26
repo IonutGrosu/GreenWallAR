@@ -2156,7 +2156,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -2060.744}
+  m_AnchoredPosition: {x: 0, y: -2863.227}
   m_SizeDelta: {x: 1100, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8847300364747452130
@@ -2187,31 +2187,32 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "The effluent from each green roof prototype is transported to a green
-    wall unit for further treatment. Each unit consists of a topmost unplanted row
-    and 15 planted rows. Each row is installed at a slight angle, enabling the water
-    to flow in alternating directions, either from left to right or from right to
-    left. All wall units are identical in terms of vegetation and media. The media
-    mixture consists of a combination of pumice, compost, biochar and sphagnum that
-    supports optimal plant growth. \n\nThe water treatment mechanisms occurring in
-    the green walls are similar to the ones in the green roofs: plants take up organic
-    contaminants, nitrogen and phosphorus from the greywater, while various other
-    contaminants are efficiently adsorbed on the media particles. Much like the green
-    roofs, the green walls can also detain a significant amount of rainwater during
-    heavy rain events and thus help with flood prevention in cities. Water samples
-    can be conveniently collected from any of the wall\u2019s rows for subsequent
-    analysis of contaminant concentrations at the university laboratory. \n\nThe
-    results are then used to assess whether the treatment provided by both the green
-    roofs and green walls has been effective enough to enable safe reuse of the water.
-    If this is the case, the effluent from the green walls can be redirected back
-    into the house for toilet flushing. \n\nIt is worth mentioning that aside from
-    greywater treatment, rainwater retention and flood prevention, nature-based solutions
-    like the ones here provide a multitude of additional benefits such as air purification,
-    supporting biodiversity, reducing the heat island effect in cities, etc. \n\nPlease,
-    point your camera towards the wall modules to see a simulation of how water flows
-    through and is being treated. Point your phone back to the wall of the container
-    near the first experience to see how the treated greywater is reused again for
-    toilet flushing.\n\n"
+  m_text: "The Greywater from sinks, showers and laundry machines is represented
+    in the experience by the blue/black pipes.\n\nThe effluent from each green roof
+    prototype is transported to a green wall unit for further treatment. Each unit
+    consists of a topmost unplanted row and 15 planted rows. Each row is installed
+    at a slight angle, enabling the water to flow in alternating directions, either
+    from left to right or from right to left. All wall units are identical in terms
+    of vegetation and media. The media mixture consists of a combination of pumice,
+    compost, biochar and sphagnum that supports optimal plant growth. \n\nThe water
+    treatment mechanisms occurring in the green walls are similar to the ones in
+    the green roofs: plants take up organic contaminants, nitrogen and phosphorus
+    from the greywater, while various other contaminants are efficiently adsorbed
+    on the media particles. Much like the green roofs, the green walls can also detain
+    a significant amount of rainwater during heavy rain events and thus help with
+    flood prevention in cities. Water samples can be conveniently collected from
+    any of the wall\u2019s rows for subsequent analysis of contaminant concentrations
+    at the university laboratory. \n\nThe results are then used to assess whether
+    the treatment provided by both the green roofs and green walls has been effective
+    enough to enable safe reuse of the water. If this is the case, the effluent from
+    the green walls can be redirected back into the house for toilet flushing. \n\nIt
+    is worth mentioning that aside from greywater treatment, rainwater retention
+    and flood prevention, nature-based solutions like the ones here provide a multitude
+    of additional benefits such as air purification, supporting biodiversity, reducing
+    the heat island effect in cities, etc. \n\nPlease, point your camera towards
+    the wall modules to see a simulation of how water flows through and is being
+    treated. Point your phone back to the wall of the container near the first experience
+    to see how the treated greywater is reused again for toilet flushing.\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

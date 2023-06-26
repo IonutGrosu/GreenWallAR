@@ -3505,7 +3505,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -1819.7589}
+  m_AnchoredPosition: {x: 0, y: -2407.4226}
   m_SizeDelta: {x: 1100, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6014576368034161978
@@ -3536,29 +3536,31 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "The average water consumption in Denmark is 105 L per day per person.
-    While there is an abundant amount of groundwater in Denmark, the demand in growing
-    cities is highly concentrated and is becoming more and more of a supply challenge.
-    Therefore, there is a growing interest in exploring alternative sources of water
-    for satisfying non-potable demands such as toilet flushing. \n\nOne option is
-    collecting rainwater that is a comparatively clean, but an unreliable source.
-    Greywater is wastewater from kitchens, baths and laundry, excluding wastewater
-    from toilets and is thus not contaminated with faecal matter. It is therefore
-    a more consistent source of secondary water that is relatively easy to treat.
-    \n\nThe average Danish person produces between 50 and 60 litres of greywater
-    from sinks, showers and laundry machines every day. In this project we simulate
-    a one-person household, where water from the sinks, shower and laundry machine
-    is collected in a tank and pumped through the green roofs and green walls prototypes.
-    The greywater and retained rainwater are being treated together to be reused
-    for toilet flushing. This practice can contribute to water conservation as well
-    as energy and resource savings on wastewater transport and treatment.\n\nWastewater
-    from the toilet is still transported to a wastewater treatment plant for more
-    rigorous treatment. The quality of the effluent from the prototypes is regularly
-    analysed to evaluate whether it is safe for reuse. Please point your camera towards
-    the container walls to see a simulation of how greywater can be separated from
-    black water (water from toilets). To find out how green roofs can treat greywater,
-    please move to the second experience that you can find at the green roof prototypes
-    on the top of the building.\n\n"
+  m_text: "The Greywater from sinks, showers and laundry machines is represented
+    in the experience by the blue/black pipes.\n\nThe Wastewater from the toilet
+    is represented in the experience by the gray/black pipes.\n\nThe average water
+    consumption in Denmark is 105 L per day per person. While there is an abundant
+    amount of groundwater in Denmark, the demand in growing cities is highly concentrated
+    and is becoming more and more of a supply challenge. Therefore, there is a growing
+    interest in exploring alternative sources of water for satisfying non-potable
+    demands such as toilet flushing. \n\nOne option is collecting rainwater that
+    is a comparatively clean, but an unreliable source. Greywater is wastewater from
+    kitchens, baths and laundry, excluding wastewater from toilets and is thus not
+    contaminated with faecal matter. It is therefore a more consistent source of
+    secondary water that is relatively easy to treat. \n\nThe average Danish person
+    produces between 50 and 60 litres of greywater from sinks, showers and laundry
+    machines every day. In this project we simulate a one-person household, where
+    water from the sinks, shower and laundry machine is collected in a tank and pumped
+    through the green roofs and green walls prototypes. The greywater and retained
+    rainwater are being treated together to be reused for toilet flushing. This practice
+    can contribute to water conservation as well as energy and resource savings on
+    wastewater transport and treatment.\n\nWastewater from the toilet is still transported
+    to a wastewater treatment plant for more rigorous treatment. The quality of the
+    effluent from the prototypes is regularly analysed to evaluate whether it is
+    safe for reuse. Please point your camera towards the container walls to see a
+    simulation of how greywater can be separated from black water (water from toilets).
+    To find out how green roofs can treat greywater, please move to the second experience
+    that you can find at the green roof prototypes on the top of the building.\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
